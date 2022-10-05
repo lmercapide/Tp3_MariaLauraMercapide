@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true,
     })
  
-     Tratamiento.Associations = models => {
+     Tratamiento.Associate = models => {
         Tratamiento.belongsTo(models.paciente)
     }
     return Tratamiento

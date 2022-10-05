@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true,
     })
  
-     Paciente.association = models => {
+     Paciente.associate = models => {
         Paciente.belongsTo(models.medico)
         Paciente.hasMany(models.tratamiento)
     }

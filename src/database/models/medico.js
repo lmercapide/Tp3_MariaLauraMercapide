@@ -46,9 +46,9 @@ module.exports = (sequelize, DataTypes) => {
      }, { paranoid: true,
         freezeTableName: true,
     })
-    Medico.association = models => {
-     
-        Medico.hasMany(models.paciente)
+
+    Medico.associate = models => {
+            Medico.hasMany(models.paciente)
     }
     return Medico
 
