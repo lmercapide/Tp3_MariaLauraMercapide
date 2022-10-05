@@ -1,0 +1,32 @@
+{
+  "name": "proyectonodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index.js",
+    "db:create": "npx sequelize-cli db:create",
+    "db:seed": "npx sequelize db:seed:all",
+    "db:migrate": "npx sequelize db:migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "joi": "^17.6.2",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.23.2",
+    "sequelize-cli": "^6.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmercapide/Tp2_MariaLauraMercapide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lmercapide/Tp2_MariaLauraMercapide/issues"
+  },
+  "homepage": "https://github.com/lmercapide/Tp2_MariaLauraMercapide#readme",
+  "description": ""
+}
