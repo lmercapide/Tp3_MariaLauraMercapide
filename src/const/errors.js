@@ -17,7 +17,18 @@ module.exports = {
         code: 1002,
         message: 'Medico Inexistente'
 
-    }
+    },
+    'PacienteInexistente': {
 
+        code: 1002,
+        message: 'Paciente Inexistente'
+
+    },
+    'TratamientoInexistente': {
+
+        code: 1002,
+        message: 'Tratamiento Inexistente'
+
+    }
 
 }

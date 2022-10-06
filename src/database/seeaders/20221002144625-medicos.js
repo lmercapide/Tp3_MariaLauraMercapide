@@ -16,10 +16,8 @@ module.exports = {
             defaults: {
                 nombre: "Maria Lopez",
                 dni: "24123125",
-                especialidad: "clinico",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
-
+                especialidad: "clinico"
+               
 
             }
 
@@ -35,10 +33,8 @@ module.exports = {
             defaults: {
                 nombre: "jose gomez",
                 dni: "32145874",
-                especialidad: "pediatra",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
-
+                especialidad: "pediatra"
+           
 
             }
 

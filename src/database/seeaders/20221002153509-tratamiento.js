@@ -15,9 +15,8 @@ module.exports = {
 
             },
             defaults: {
-                nombre: "antibiotico",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
+                nombre: "antibiotico"
+               
 
 
             }
@@ -32,10 +31,8 @@ module.exports = {
 
             },
             defaults: {
-                nombre: "psicofarmaco",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
-
+                nombre: "psicofarmaco"
+             
 
             }
 

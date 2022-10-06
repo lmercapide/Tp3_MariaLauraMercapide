@@ -29,8 +29,7 @@ module.exports = (sequelize, DataTypes) => {
         deletedAt: {
             type: DataTypes.DATE,
             field: 'deleted_at',
-            defaultValue: DataTypes.NOW,
-            allowNull: false
+           
         }
       
      }, { paranoid: true,
@@ -38,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
     })
  
      Tratamiento.Associate = models => {
-        Tratamiento.belongsTo(models.paciente)
+        Tratamiento.hasMany(models.paciente)
     }
     return Tratamiento
 

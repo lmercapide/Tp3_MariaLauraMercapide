@@ -21,22 +21,28 @@ module.exports = {
         },
         listarInfo: async(req, res) => {
     
-            const trat = await models.tratamiento.findOne({
-                    where: {
-                        id: req.params.idTratamiento
-                        
+            try{
+                const trat = await models.tratamiento.findOne({
+                        where: {
+                            id: req.params.idTratamiento
+                            
+                        }
+        
+        
+                })
+                if (!trat) return next(errors.TratamientoInexistente)
+                res.json({
+                       sucees: true,
+                       data: {
+        
+                               tratamiento:trat
+                             }
+        
+                        })
+                    } catch (err){
+                        return next(err)
                     }
-    
-    
-            })
-                    res.json({
-                            sucees: true,
-                            data: {
-    
-                                tratameinto:trat
-                            }
-    
-                    })
+           
            
         },
         create: async(req, res) => {

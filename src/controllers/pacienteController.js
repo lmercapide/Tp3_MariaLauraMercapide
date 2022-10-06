@@ -7,38 +7,41 @@ module.exports = {
     listar: async(req, res) => {
 
         const paci = await models.paciente.findAll()
-            
+        
         res.json({
-            sucess: true,
-            data: {
+                sucess: true,
+                data: {
 
-                pacientes: paci
-            }
-
-
-        })
+                    pacientes: paci
+                }
 
 
+         })
     },
 
     listarInfo: async(req, res) => {
 
-        const paci = await models.paciente.findOne({
-                where: {
-                    id: req.params.idPaciente
-                    
+        try{
+            const paci = await models.paciente.findOne({
+                    where: {
+                        id: req.params.idPaciente
+                        
+                    }
+    
+    
+            })
+            if (!paci) return next(errors.PacienteInexistente)
+            res.json({
+                   sucees: true,
+                   data: {
+    
+                           paciente:paci
+                         }
+    
+                    })
+                } catch (err){
+                    return next(err)
                 }
-
-
-        })
-                res.json({
-                        sucees: true,
-                        data: {
-
-                            paciente:paci
-                        }
-
-                })
        
     },
     create: async(req, res) => {

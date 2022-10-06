@@ -20,8 +20,6 @@ const init = () => {
     configuracionRouter(app)
 
    
-
-   
     app.listen(globalConstants.PORT)
     console.log(`corriendo...` + globalConstants.PORT)   
 

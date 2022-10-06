@@ -15,10 +15,8 @@ module.exports = {
             },
             defaults: {
                 nombre: "Lucia Gomez",
-                dni: "41212541",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
-
+                dni: "41212541"
+               
 
             }
 
@@ -33,9 +31,8 @@ module.exports = {
             },
             defaults: {
                 nombre: "Matias Sanchez",
-                dni: "10793398",
-                created_at: "2022-09-02 12:00:00.009+00",
-                updated_at: "2022-09-02 12:00:00.009+00" 
+                dni: "10793398"
+              
 
 
             }
