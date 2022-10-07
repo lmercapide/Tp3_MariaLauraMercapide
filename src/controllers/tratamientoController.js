@@ -35,7 +35,7 @@ module.exports = {
                        sucees: true,
                        data: {
         
-                               tratamiento:trat
+                               tratamiento: trat
                              }
         
                         })

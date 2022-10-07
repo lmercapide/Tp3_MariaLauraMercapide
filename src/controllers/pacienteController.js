@@ -22,7 +22,7 @@ module.exports = {
         listarInfo: async(req, res) => {
     
             try{
-                const paci = await models.pacientes.findOne({
+                const paci = await models.paciente.findOne({
                         where: {
                             id: req.params.idPaciente
                             
@@ -35,7 +35,7 @@ module.exports = {
                        sucees: true,
                        data: {
         
-                               paciente:paci
+                               paciente: paci
                              }
         
                         })
