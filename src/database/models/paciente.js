@@ -32,12 +32,13 @@ module.exports = (sequelize, DataTypes) => {
         deletedAt: {
             type: DataTypes.DATE,
             field: 'deleted_at',
-           
+            
         }
+      
      }, { paranoid: true,
         freezeTableName: true,
     })
- 
+
      Paciente.associate = models => {
         Paciente.belongsTo(models.medico)
         Paciente.hasMany(models.tratamiento)

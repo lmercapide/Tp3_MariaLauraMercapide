@@ -46,7 +46,7 @@ module.exports = {
     create: async(req, res) => {
       
         
-        const medi = await models.medico.create(req.body)
+        const medi = await models.medico.create()
 
                 res.json({
 
