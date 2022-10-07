@@ -5,7 +5,6 @@ let crearMedico = Joi.object({
     dni : Joi.string().optional(),
     especialidad : Joi.string().required()
 
-
 })
 
 module.exports = {

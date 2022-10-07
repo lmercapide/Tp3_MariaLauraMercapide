@@ -1,4 +1,5 @@
 'use strict'
+
 module.exports = (sequelize, DataTypes) => {
 
     let Paciente = sequelize.define('paciente', {
@@ -15,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         dni: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         createdAt: {
             type: DataTypes.DATE,
@@ -39,12 +40,13 @@ module.exports = (sequelize, DataTypes) => {
         freezeTableName: true,
     })
 
-     Paciente.associate = models => {
-        Paciente.belongsTo(models.medico)
-        Paciente.hasMany(models.tratamiento)
-    }
-    return Paciente
+    Paciente.associate = models => {
 
-  }
+        Paciente.hasMany(models.medico)
+       // Paciente.belongsTo(models.tratamiento)
+    }
+       return Paciente
+
+    }
 
 

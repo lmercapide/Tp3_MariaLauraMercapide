@@ -46,7 +46,7 @@ module.exports = {
            
         },
         create: async(req, res) => {
-                    const paci = await models.paciente.create()
+                    const paci = await models.paciente.create(req.body)
     
                     res.json({
     

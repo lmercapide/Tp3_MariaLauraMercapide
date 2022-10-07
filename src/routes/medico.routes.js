@@ -12,3 +12,4 @@ router.post('/', validate(scheme_medico.crearMedico), medicoController.create)
 router.get('/:idMedico', medicoController.listarInfo)
 
 module.exports = router
+

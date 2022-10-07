@@ -46,7 +46,7 @@ module.exports = {
            
         },
         create: async(req, res) => {
-                    const trat = await models.tratamiento.create()
+                    const trat = await models.tratamiento.create(req.body)
     
                     res.json({
     

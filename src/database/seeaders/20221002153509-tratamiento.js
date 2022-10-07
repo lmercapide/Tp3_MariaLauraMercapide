@@ -11,14 +11,13 @@ module.exports = {
 
             where: {
 
-                id: "1"
+                id: "2"
 
             },
             defaults: {
-                nombre: "antibiotico"
-               
-
-
+                
+              nombre: "antibiotico"
+           
             }
 
 
@@ -27,7 +26,7 @@ module.exports = {
 
             where: {
 
-                id: "2"
+                id: "3"
 
             },
             defaults: {

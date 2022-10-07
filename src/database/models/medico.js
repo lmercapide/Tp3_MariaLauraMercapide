@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         nombre: {
             type: DataTypes.STRING,
-            allownull: false
+            allowNull: false
         },
         dni: {
             type: DataTypes.INTEGER,
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         especialidad: {
             type: DataTypes.STRING,
-            allownull: false
+            allowNull: false
         },
         createdAt: {
             type: DataTypes.DATE,
