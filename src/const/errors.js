@@ -29,6 +29,12 @@ module.exports = {
         code: 1004,
         message: 'Tratamiento Inexistente'
 
+    },
+    'UsuarioInexistente': {
+
+        code: 1005,
+        message: 'Tratamiento Inexistente'
+
     }
 
 }
