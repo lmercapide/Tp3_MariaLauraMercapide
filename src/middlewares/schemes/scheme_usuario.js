@@ -4,7 +4,7 @@ let crearUsuario = Joi.object({
     nombre : Joi.string().required(),
     apellido : Joi.string().required(),
     email : Joi.string().email().optional(),
-    edad : Joi.integer().reqoptionaluired()
+    edad : Joi.number().optional()
 
 })
 
