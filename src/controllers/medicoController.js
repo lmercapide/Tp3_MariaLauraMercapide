@@ -7,9 +7,9 @@ module.exports = {
             
    listar: async(req, res) => {
 
-    const medi = await models.medico.findAll()
+    try { const medi = await models.medico.findAll()
         
-        res.json({
+       res.json({
                 sucess: true,
                 data: {
 
@@ -18,6 +18,11 @@ module.exports = {
 
 
          })
+    
+
+    } catch (err){
+            return next(err)
+        }
     },
 
     listarInfo: async(req, res, next) => {

@@ -1,3 +1,4 @@
+
 'use strict';
 
 const models = require('../models/index')
@@ -6,7 +7,7 @@ module.exports = {
    up (queryInterface, Sequelize){
       return Promise.all([
 
-          models.medico.findOrCreate({
+          models.tratamiento.findOrCreate({
 
             where: {
 
@@ -14,16 +15,14 @@ module.exports = {
 
             },
             defaults: {
-                nombre: "Maria Lopez",
-                dni: "24123125",
-                especialidad: "clinico"
-               
-
+                
+              nombre: "antibiotico"
+           
             }
 
 
           }),
-          models.medico.findOrCreate({
+          models.tratamiento.findOrCreate({
 
             where: {
 
@@ -31,10 +30,8 @@ module.exports = {
 
             },
             defaults: {
-                nombre: "jose gomez",
-                dni: "32145874",
-                especialidad: "pediatra"
-           
+                nombre: "psicofarmaco"
+             
 
             }
 
@@ -45,7 +42,7 @@ module.exports = {
       ]
   )},
 
-  down (queryInterface, Sequelize) {
+  async down (queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *

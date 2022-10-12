@@ -10,7 +10,7 @@ module.exports = {
 
             where: {
 
-                id: "2"
+                id: "3"
 
             },
             defaults: {
@@ -27,7 +27,7 @@ module.exports = {
 
             where: {
 
-                id: "3"
+                id: "4"
 
             },
             defaults: {
@@ -45,7 +45,7 @@ module.exports = {
       ]
   )},
 
-  down (queryInterface, Sequelize) {
+  async down (queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *

@@ -6,24 +6,7 @@ module.exports = {
    up (queryInterface, Sequelize){
       return Promise.all([
 
-          models.medico.findOrCreate({
-
-            where: {
-
-                id: "2"
-
-            },
-            defaults: {
-                nombre: "Maria Lopez",
-                dni: "24123125",
-                especialidad: "clinico"
-               
-
-            }
-
-
-          }),
-          models.medico.findOrCreate({
+          models.paciente.findOrCreate({
 
             where: {
 
@@ -31,10 +14,26 @@ module.exports = {
 
             },
             defaults: {
-                nombre: "jose gomez",
-                dni: "32145874",
-                especialidad: "pediatra"
-           
+                nombre: "Lucia Gomez",
+                dni: "41212541"
+               
+
+            }
+
+
+          }),
+          models.paciente.findOrCreate({
+
+            where: {
+
+                id: "4"
+
+            },
+            defaults: {
+                nombre: "Matias Sanchez",
+                dni: "10793398"
+              
+
 
             }
 
@@ -45,7 +44,7 @@ module.exports = {
       ]
   )},
 
-  down (queryInterface, Sequelize) {
+  async down (queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *

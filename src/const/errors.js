@@ -29,6 +29,26 @@ module.exports = {
         code: 1004,
         message: 'Tratamiento Inexistente'
 
+    },
+    'UsuarioInexistente': {
+        code: 1005,
+        message: 'El usuario no existe'
+    },
+    'ArchivoInexistente': {
+        code: 1006,
+        message: 'El archivo no existe'
+    },
+    'CredencialesInvalidas': {
+        code: 1007,
+        message: 'Credenciales inválidas'
+    },
+    'UsuarioNoAutorizado': {
+        code: 1008,
+        message: 'Usuario no autorizado'
+    },
+    'SesionExpirada': {
+        code: 1009,
+        message: 'Sesión expirada'
     }
 
 }

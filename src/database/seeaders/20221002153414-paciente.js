@@ -10,12 +10,13 @@ module.exports = {
 
             where: {
 
-                id: "3"
+                id: "5"
 
             },
             defaults: {
                 nombre: "Lucia Gomez",
-                dni: "41212541"
+                dni: "41212541",
+                tratamientoId: "3"
                
 
             }
@@ -26,13 +27,13 @@ module.exports = {
 
             where: {
 
-                id: "4"
+                id: "7"
 
             },
             defaults: {
                 nombre: "Matias Sanchez",
-                dni: "10793398"
-              
+                dni: "10793398",
+                tratamientoId: "2"
 
 
             }

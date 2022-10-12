@@ -43,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     Paciente.associate = models => {
 
         Paciente.hasMany(models.medico)
-       // Paciente.belongsTo(models.tratamiento)
+        Paciente.belongsTo(models.tratamiento)
     }
        return Paciente
 
